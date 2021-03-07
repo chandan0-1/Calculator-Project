@@ -1,11 +1,12 @@
-console.log(1);
+
 var dig = document.getElementsByClassName("digit");
 var out = document.getElementById("output");
 var secout = document.getElementById("sec-output");
+
 var op1 = 0;
 var sign = null;
 var op2 = 0;
-var reset = 0;
+
 for (var i = 0; i < dig.length; i++){
   dig[i].addEventListener('click',function(){
     var val = this.getAttribute('val');
@@ -74,7 +75,6 @@ for (var i = 0; i < dig.length; i++){
       
     
     else{
-      
       secout.innerText +=val;}
   })
 }
